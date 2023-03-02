@@ -29,9 +29,7 @@ def start():
     random.shuffle(s)
     print(s)
     rd1 = random.randint(0,9)
-    a = s[rd1]
     rd2 = random.randint(0,9)
-    b= s[rd2]
     temp=len(point)*10+1
 
     # code
