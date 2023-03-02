@@ -1,3 +1,4 @@
+# 100%原創
 import random
 import copy
 
