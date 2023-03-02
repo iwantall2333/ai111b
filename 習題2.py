@@ -6,24 +6,17 @@ def total(point,s): # 算總距離
     sum1 = 0
 
     pointTM = point.copy()
-    for i in range (len(point)-1):
+    length = len(point) -1
+    for i in range (length+1): # 0~ length-1
         pointTM[i] = point[s[i]]  # 變成換過順序的point
 
-    for i in range(len(point)-1):
+    for i in range(length):
         sum1 += (abs(pointTM[i][0] -pointTM[i+1][0]) + abs(pointTM[i][1] -pointTM[i+1][1])) ** 0.5
+
+    sum1 += (abs(pointTM[length][0] -pointTM[0][0]) + abs(pointTM[length][1] -pointTM[0][1])) ** 0.5
 
     return sum1
 
-def meter(a,b,point,s): # 暫時算總距離
-
-    sum = 0
-    pointTM = point.copy()
-    for i in range (len(point)-1):
-        pointTM[i] = point[s[i]]  # 變成換過順序的point
-
-    for i in range(len(point)-1):
-        sum += (abs(pointTM[i][0] -pointTM[i+1][0]) + abs(pointTM[i][1] -pointTM[i+1][1])) ** 0.5
-    return sum
 
 def start():
 
@@ -43,8 +36,8 @@ def start():
 
     # code
     for i in range(100000):
-        if(meter(a,b,point,s)<temp):
-            s[rd1],s[rd2]=s[rd2],s[rd1]
+        if(total(point,s)>temp):
+            s[rd1],s[rd2]=s[rd2],s[rd1] # 沒超過就交換
 
     print("length: ",total(point,s)," set: ",s)
    
