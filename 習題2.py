@@ -1,4 +1,4 @@
-# 100%原創，還在修改
+# 100%原創
 import random
 import copy
 
