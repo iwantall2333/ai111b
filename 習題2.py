@@ -1,4 +1,4 @@
-# 100%原創
+# 100%原創，還在修改
 import random
 import copy
 
@@ -27,17 +27,20 @@ def start():
             [3,1],[3,2],[3,3]]
 
     random.shuffle(s)
-    print(s)
+    print("initial",s)
+    print("initial length: ",total(point,s))
     
-    temp=len(point)*10+1
+    temp=total(point,s)
 
     # code
-    for i in range(100000):
+    for i in range(10000):
         rd1 = random.randint(0,9)
         rd2 = random.randint(0,9)
         s[rd1],s[rd2]=s[rd2],s[rd1]
         if(total(point,s)>temp):
             s[rd1],s[rd2]=s[rd2],s[rd1] # 沒超過就換回來
+        else:
+            temp=total(point,s)
 
     print("length: ",total(point,s)," set: ",s)
    
