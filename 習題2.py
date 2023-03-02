@@ -6,14 +6,14 @@ def total(point,s): # 算總距離
     sum1 = 0
 
     pointTM = point.copy()
-    length = len(point) -1
-    for i in range (length+1): # 0~ length-1
+    length = len(point)
+    for i in range (length): # 0~ length-1
         pointTM[i] = point[s[i]]  # 變成換過順序的point
 
-    for i in range(length):
+    for i in range(length-1):
         sum1 += (abs(pointTM[i][0] -pointTM[i+1][0]) + abs(pointTM[i][1] -pointTM[i+1][1])) ** 0.5
 
-    sum1 += (abs(pointTM[length][0] -pointTM[0][0]) + abs(pointTM[length][1] -pointTM[0][1])) ** 0.5
+    sum1 += (abs(pointTM[length-1][0] -pointTM[0][0]) + abs(pointTM[length-1][1] -pointTM[0][1])) ** 0.5
 
     return sum1
 
