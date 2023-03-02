@@ -1,3 +1,5 @@
+# 聲明 : 改編自老師給的範例https://github.com/ccc111b/py2cs/blob/master/03-%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7/A3-%E7%BF%92%E9%A1%8C/01-regression/regression.py
+
 import matplotlib.pyplot as plt
 import numpy as np
 
