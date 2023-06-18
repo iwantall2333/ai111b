@@ -3,6 +3,7 @@
 
 # 主題 : 使用yolov7官方預訓練模型進行人的偵測
 
+demo影片 : [yolov7-tiny](https://drive.google.com/file/d/1P6DZCHwPJep_4WP5qqSs9tks6-JPUCXA/view)
 
 ### 步驟
 
@@ -49,7 +50,7 @@
     yolov7預設的分類載檢測目標有80類，`default='0'`代表我只偵測第一個類別(也就是人)
     修改好後，就可以指定只偵測人了
 
-7. demo影片 : [yolov7-tiny](https://drive.google.com/file/d/1P6DZCHwPJep_4WP5qqSs9tks6-JPUCXA/view)
+7. demo影片 : [yolov7-tiny](https://drive.google.com/file/d/1P6DZCHwPJep_4WP5qqSs9tks6-JPUCXA/view) (跟上面的影片一樣)
 
 ### 結論
 
