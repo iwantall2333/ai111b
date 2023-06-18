@@ -1,7 +1,7 @@
 
 聲明 : yolov7的檔案取自[官網](https://github.com/WongKinYiu/yolov7)，因為我最終更動到的檔案只有[detect.py](https://github.com/iwantall2333/ai111b/blob/main/%E6%9C%9F%E4%B8%AD/my_detect.py)，所以我在github上只放上`detect.py`(`my_detect.py`)
 
-# 主題 : 使用yolov7官方預訓練模型進行人的偵測
+# 主題 : 使用yolov7官方預訓練模型進行人的實時影像偵測
 
 demo影片 : [yolov7-tiny](https://drive.google.com/file/d/1P6DZCHwPJep_4WP5qqSs9tks6-JPUCXA/view)
 
