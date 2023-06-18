@@ -2,7 +2,7 @@
 
 聲明 : 筆記圖片的來源都有寫在筆記裡面，參考資料、參考內文也是，剩下就是自己寫的了
 
-:star:[筆記]()
+:star:[筆記](https://github.com/iwantall2333/ai111b/blob/main/%E6%9C%9F%E6%9C%AB/note.md)
 
 # 平時作業 : 
 
